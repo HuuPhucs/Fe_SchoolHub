@@ -1,0 +1,200 @@
+// Write your overrides
+@use "@core/scss/base/_default-layout.scss";
+
+// 👉 Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.text-h1,
+.text-h2,
+.text-h3,
+.text-h4,
+.text-h5,
+.text-h6,
+.text-button,
+.text-overline,
+.v-card-title ,
+.v-application,
+{
+  color: rgba(var(--v-theme-on-background), 1);
+}
+
+.text-body-1,
+.text-body-2,
+.text-subtitle-1,
+.text-subtitle-2 {
+  color: rgba(var(--v-theme-on-background), var(--v-medium-emphasis-opacity));
+}
+
+.v-card--variant-elevated, .v-card--variant-flat {
+  background: rgb(var(--v-theme-surface)) ;
+  color: rgba(var(--v-theme-on-surface), 1) !important;
+}
+
+* {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h5{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+html {
+  font-family: "Josefin Sans", "Public Sans", sans-serif, -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+// horizontal layout
+.layout-horizontal-nav .nav-group .popper-content .nav-link.sub-item a,
+.layout-horizontal-nav .nav-group .popper-content .nav-group-label,
+.layout-horizontal-nav .nav-link .popper-content .nav-link.sub-item a,
+.layout-horizontal-nav .nav-link .popper-content .nav-group-label{
+  margin-inline: 0;
+}
+
+// vertical layout
+
+.layout-wrapper.layout-nav-type-vertical {
+
+  &:not(.layout-navbar-sticky) .layout-navbar .navbar-content-container {
+    margin-block-start: 0;
+    border-radius: 0;
+  }
+
+  .layout-navbar {
+    padding-inline: 0;
+
+    .navbar-content-container {
+      border-radius: 0;
+    }
+  }
+
+}
+
+.layout-page-content {
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+.layout-footer {
+  background-color: rgb(var(--v-theme-layout-surface));
+  color: rgb(var(--v-theme-on-layout-surface));
+
+  .footer-content-container {
+    block-size: auto;
+  }
+
+}
+
+// Navbar (menu)
+.app-logo {
+  img {
+    height: 40px;
+  }
+}
+
+.layout-nav-type-vertical .layout-vertical-nav {
+  @extend %layout-navbar;
+
+}
+
+.nav-item-icon,
+.layout-vertical-nav.hovered .nav-item-icon {
+  display: none;
+}
+
+.layout-vertical-nav-collapsed {
+  .nav-item-icon {
+    display: inline-flex;
+  }
+
+}
+
+
+// banner
+.layout-banner {
+  img {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+  }
+
+  height: 600px;
+
+}
+
+// menu tab duoi banner
+.menu-tab {
+  background-color: #F8D4C0;
+  height: 40px;
+  /* Navigation */
+
+  .nav-background {
+    background: #f8d4c0;
+    height: 40px;
+  }
+
+  .nav {
+    display: flex;
+  }
+
+  .nav-btn {
+    color: #72675b;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    background: transparent;
+    padding: 8px 15px;
+    text-align: center;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    cursor: pointer;
+  }
+
+  .nav-btn:hover, .nav-btn.active {
+    border-radius: 0px 0px 10px 10px;
+    background: linear-gradient(90deg, #f05a22 0%, #feb907 100%);
+    padding: 8px 15px 15px;
+    color: #ffffff;
+  }
+
+  .nav-btn.active {
+    cursor: not-allowed;
+  }
+}
+
+// Breadcrumbs
+.v-breadcrumbs-item {
+  text-transform: capitalize;
+}

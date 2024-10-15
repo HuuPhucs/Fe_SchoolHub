@@ -1,0 +1,37 @@
+{
+  "Bán trú": {
+    "Thực Đơn": "Menus",
+    "Thực đơn tuần": "Menu for",
+    "Trường tiểu học Nguyễn Siêu": "Nguyen Sieu Primary School",
+    "Thứ 2": "Monday",
+    "Thứ 3": "Tuesday",
+    "Thứ 4": "Wednesday",
+    "Thứ 5": "Thursday",
+    "Thứ 6": "Friday",
+    "Ăn sáng": "Breakfast",
+    "Ghi chú thực đơn": "The above items are for reference only during the week. Breakfast is not included in student meals.",
+    "Bài viết liên quan": "Related Menus",
+    "Tổng quan": "Summary"
+  },
+  "Chương trình học": {
+    "Số Buổi Học": "Number of sessions",
+    "Học Phí": "Tuition (VNĐ)",
+    "Thời Gian": "Time",
+    "Thông Tin CLB": "Club Info",
+    "buổi/tuần": "session per week"
+  },
+  "Cơ cấu tổ chức": {
+    "Chức vụ": "Position",
+    "Phòng ban": "Department",
+    "Thông tin liên lạc": "Contact info",
+    "Học vấn": "Education",
+    "Quá trình làm việc": "Work progress"
+  },
+  "Học phí": {
+    "Tiêu đề": "Tuition",
+    "Bảng quy định học phí": "Tuition fee table for",
+    "Mô hình lớp": "Class model",
+    "Lớp": "Class",
+    "Học phí/Chương trình học": "Tuition/Study program (VND)"
+  }
+}

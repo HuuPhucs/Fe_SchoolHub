@@ -1,0 +1,37 @@
+{
+    "Bán trú": {
+        "Thực Đơn": "Thực đơn",
+        "Thực đơn tuần": "Thực đơn tuần",
+        "Trường tiểu học Nguyễn Siêu": "Trường tiểu học Nguyễn Siêu",
+        "Thứ 2": "Thứ 2",
+        "Thứ 3": "Thứ 3",
+        "Thứ 4": "Thứ 4",
+        "Thứ 5": "Thứ 5",
+        "Thứ 6": "Thứ 6",
+        "Ăn sáng": "Ăn gì sáng nay?",
+        "Ghi chú thực đơn": "Các món trên chỉ mang tính chất tham khảo trong tuần. Bữa sáng không nằm trong tiền ăn của học sinh.",
+        "Bài viết liên quan": "Bài viết liên quan",
+        "Tổng quan": "Tổng quan"
+    },
+    "Chương trình học": {
+        "Số Buổi Học": "Số Buổi Học",
+        "Học Phí": "Học Phí (VNĐ)",
+        "Thời Gian": "Thời Gian",
+        "Thông Tin CLB": "Thông Tin CLB",
+        "buổi/tuần": "buổi/tuần"
+    },
+    "Cơ cấu tổ chức": {
+        "Chức vụ": "Chức vụ",
+        "Phòng ban": "Phòng ban",
+        "Thông tin liên lạc": "Thông tin liên lạc",
+        "Học vấn": "Học vấn",
+        "Quá trình làm việc": "Quá trình làm việc"
+    },
+    "Học phí": {
+        "Tiêu đề": "Học phí",
+        "Bảng quy định học phí": "Bảng quy định học phí năm học",
+        "Mô hình lớp": "Mô hình lớp",
+        "Lớp": "Lớp",
+        "Học phí/Chương trình học": "Học phí/Chương trình học (VNĐ)"
+    }
+}

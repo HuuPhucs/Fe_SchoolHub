@@ -1,0 +1,60 @@
+<script setup lang="ts">
+import type { I18nLanguage } from '@layouts/types'
+
+const props = withDefaults(defineProps<Props>(), {
+  location: 'bottom end',
+})
+
+defineEmits<{
+  (e: 'change', id: string): void
+}>()
+
+interface Props {
+  languages: I18nLanguage[]
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  location?: any
+}
+
+const { locale } = useI18n({ useScope: 'global' })
+
+watch(locale, val => {
+  document.documentElement.setAttribute('lang', val as string)
+})
+const initLang = props.languages.find(l => locale.value === l.i18nLang)?.i18nLang;
+
+const currentLang = ref([initLang])
+</script>
+
+<template>
+  <IconBtn>
+    <VIcon
+      size="26"
+      icon="mdi-web"
+    />
+
+    <!-- Menu -->
+    <VMenu
+      activator="parent"
+      :location="props.location"
+      offset="14px"
+      open-on-hover
+    >
+      <!-- List -->
+      <VList
+        v-model:selected="currentLang"
+        min-width="175px"
+      >
+        <!-- List item -->
+        <VListItem
+          v-for="lang in props.languages"
+          :key="lang.i18nLang"
+          :value="lang.i18nLang"
+          @click="locale = lang.i18nLang; $emit('change', lang.i18nLang)"
+        >
+          <!-- Language label -->
+          <VListItemTitle>{{ lang.label }}</VListItemTitle>
+        </VListItem>
+      </VList>
+    </VMenu>
+  </IconBtn>
+</template>
